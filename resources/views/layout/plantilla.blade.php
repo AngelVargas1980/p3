@@ -63,6 +63,10 @@
         <span class="fas fa-user-plus"></span>  Personas
     </a>
 
+    <a href="{{ route("personas.create") }}" class="btn btn-primary">
+        <span class="fas fa-user-plus"></span>  Per
+    </a>
+
 {{--    <a href="{{ route("layout/plantilla") }}" class="btn btn-info">--}}
 {{--        <span class="fas fa-undo-alt"></span> Regresar--}}
 {{--    </a>--}}
