@@ -31,7 +31,7 @@
                 </a>
 
                 <a href="{{ route("personas.create") }}" class="btn btn-primary">
-                    <span class="fas fa-user-plus"></span>  Agregar nueva persona
+                    <span class="fas fa-user-plus"></span>  Agregar nuevo piloto
                 </a>
 
             </p>

@@ -14,7 +14,7 @@ class CamionController extends Controller
         //pagina de inicio
         //$datos = Personas::all();
         //$datos = Personas::orderBy('id', 'desc')->paginate(3);
-        $datos = Camion::orderBy('id', 'asc')->paginate(3);
+        $datos = Camion::orderBy('id', 'asc')->paginate(25);
         return view('inicio-camion', compact('datos'));
     }
 

@@ -12,7 +12,7 @@ class TransporteController extends Controller
      */
     public function indext()
     {
-        $datos = Transporte::orderBy('id', 'asc')->paginate(3);
+        $datos = Transporte::orderBy('id', 'asc')->paginate(25);
         return view('inicio-transporte', compact('datos'));
     }
 

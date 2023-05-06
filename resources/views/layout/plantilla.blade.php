@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
 
+
     <title>@yield('tituloPagina')</title>
 
 
@@ -50,21 +51,23 @@
 </div>
 
 
+
 <div>
     <a href="{{ route("transportes.indext") }}" class="btn btn-primary">
-        <span class="fas fa-user-plus"></span>  Transportes
+        <span class="fa-solid fa-truck"></span>  Transportes
     </a>
 
     <a href="{{ route("camiones.indexc") }}" class="btn btn-primary">
-        <span class="fas fa-user-plus"></span>  Camiones
+        <span class="fa-solid fa-truck"></span>  Camiones
+{{--        <span class="fa-sharp fa-light fa-truck-container"></span>  Camiones--}}
     </a>
 
     <a href="{{ route("personas.index") }}" class="btn btn-primary">
-        <span class="fas fa-user-plus"></span>  Personas
+        <span class="fas fa-user-plus"></span>  Piloto
     </a>
 
-    <a href="{{ route("personas.create") }}" class="btn btn-primary">
-        <span class="fas fa-user-plus"></span>  Per
+
+
     </a>
 
 {{--    <a href="{{ route("layout/plantilla") }}" class="btn btn-info">--}}
@@ -72,7 +75,7 @@
 {{--    </a>--}}
 
 
-</div>
+
 
 
 

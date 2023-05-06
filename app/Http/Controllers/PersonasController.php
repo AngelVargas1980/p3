@@ -12,7 +12,7 @@ class PersonasController extends Controller
         //pagina de inicio
         //$datos = Personas::all();
         //$datos = Personas::orderBy('id', 'desc')->paginate(3);
-        $datos = Personas::orderBy('paterno', 'asc')->paginate(3);
+        $datos = Personas::orderBy('paterno', 'asc')->paginate(25);
         return view('inicio', compact('datos'));
 
     }

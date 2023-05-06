@@ -19,10 +19,10 @@
 
                 </div>
             </div>
-        <h5 class="card-title text-center">Listado de personas en el sistema</h5>
+        <h5 class="card-title text-center">Listado de pilotos en el sistema</h5>
             <p>
                 <a href="{{ route("personas.create") }}" class="btn btn-primary">
-                    <span class="fas fa-user-plus"></span>  Agregar nueva persona
+                    <span class="fas fa-user-plus"></span>  Agregar nuevo piloto
                 </a>
 
                 <a href="{{ route("transportes.createt") }}" class="btn btn-primary">
