@@ -18,10 +18,12 @@ class PredioFactory extends Factory
     {
         return [
 
-            'codigo_predio'=>$this->faker->unique()->numberBetween(1,100),
+            'codigo_predio'=>$this->faker->languageCode,
             'nombre_predio'=> $this->faker->name,
             'direccion'=>$this->faker->address,
 
         ];
+
+
     }
 }

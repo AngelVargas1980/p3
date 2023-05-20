@@ -13,15 +13,17 @@ return new class extends Migration
     {
         Schema::create('mercancias', function (Blueprint $table) {
 
-            $table->string('codigo', 105);
-            $table->string('nombre', 175);
-            $table->unsignedBigInteger('id_tipo_mercancia')->unique();
+            $table->id();
+            $table->string('codigo');
+            $table->string('nombre', 45);
+            $table->unsignedBigInteger('id_tipo_mercancia')->nullable();
 
-            $table->foreign('id_tipo_mercancia')->references('id')->on('tipo_mercancias')->onDelete('no action');
-
+            //$table->foreign('id_tipo_mercancia')->references('id')->on('tipo_mercancias')->onDelete('no action');
 
             $table->timestamps();
         });
+
+
     }
 
     /**
@@ -29,6 +31,7 @@ return new class extends Migration
      */
     public function down(): void
     {
+
         Schema::dropIfExists('mercancia');
     }
 };

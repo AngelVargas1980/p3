@@ -39,9 +39,12 @@
                             Enlace desplegable
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="{{ route("transportes.indext") }}"">Transportes</a></li>
+                            <li><a class="dropdown-item" href="{{ route("transportes.indext") }}">Transportes</a></li>
                             <li><a class="dropdown-item" href="{{ route("camiones.indexc") }}">Camiones</a></li>
                             <li><a class="dropdown-item" href="{{ route("personas.index") }}">Personas</a></li>
+                            <li><a class="dropdown-item" href="{{ route("predios.indexp") }}">Predios</a></li>
+                            <li><a class="dropdown-item" href="{{ route("tmercancias.indextm") }}">Tipo_mercancia</a></li>
+                            <li><a class="dropdown-item" href="{{ route("mercancias.indexm") }}">Mercancia</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -54,16 +57,28 @@
 
 <div>
     <a href="{{ route("transportes.indext") }}" class="btn btn-primary">
-        <span class="fa-solid fa-truck"></span>  Transportes
+        <span class="fa-solid fa-truck"></span>Transportes
     </a>
 
     <a href="{{ route("camiones.indexc") }}" class="btn btn-primary">
-        <span class="fa-solid fa-truck"></span>  Camiones
+        <span class="fa-solid fa-truck"></span>Camiones
 {{--        <span class="fa-sharp fa-light fa-truck-container"></span>  Camiones--}}
     </a>
 
     <a href="{{ route("personas.index") }}" class="btn btn-primary">
-        <span class="fas fa-user-plus"></span>  Piloto
+        <span class="fas fa-user-plus"></span>Piloto
+    </a>
+
+    <a href="{{ route("predios.indexp") }}" class="btn btn-primary">
+        <span class="fas fa-user-plus"></span>Predio
+    </a>
+
+    <a href="{{ route("tmercancias.indextm") }}" class="btn btn-primary">
+        <span class="fas fa-user-plus"></span>Tipo_mercancia
+    </a>
+
+    <a href="{{ route("mercancias.indexm") }}" class="btn btn-primary">
+        <span class="fas fa-user-plus"></span>Mercancia
     </a>
 
 
@@ -73,11 +88,6 @@
 {{--    <a href="{{ route("layout/plantilla") }}" class="btn btn-info">--}}
 {{--        <span class="fas fa-undo-alt"></span> Regresar--}}
 {{--    </a>--}}
-
-
-
-
-
 
 
     <div class="container">
@@ -95,7 +105,20 @@
         @yield('contenidoc')
     </div>
 
+    <div class="container">
+        <br>
+        @yield('contenidop')
+    </div>
 
+    <div class="container">
+        <br>
+        @yield('contenidotm')
+    </div>
+
+    <div class="container">
+        <br>
+        @yield('contenidom')
+    </div>
 
 
 

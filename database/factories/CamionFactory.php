@@ -18,11 +18,11 @@ class CamionFactory extends Factory
     {
         return [
             'placa_camion'=>$this->faker->randomNumber(5),
-            'modelo'=>$this->faker->numberBetween(2,20),
+            'modelo'=>$this->faker->numberBetween(2,5),
             'marca'=>$this->faker->text(10),
             'color'=>$this->faker->colorName,
             'capacidad_toneladas'=>$this->faker->numberBetween(2,10),
-            'transporte_codigo'=>$this->faker->unique()->numberBetween(1,100),
+            'transporte_codigo'=>$this->faker->unique()->numberBetween(1,10),
         ];
     }
 }

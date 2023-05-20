@@ -17,9 +17,9 @@ class MercanciaFactory extends Factory
     public function definition(): array
     {
         return [
-            'codigo'=>$this->faker->unique()->numberBetween(1,100),
+            'codigo'=>$this->faker->languageCode,
             'nombre'=> $this->faker->name,
-            'id_tipo_mercancia'=>$this->faker->unique()->numberBetween(1,100),
+            'id_tipo_mercancia'=>$this->faker->unique()->numberBetween(1, 1000),
 
         ];
     }

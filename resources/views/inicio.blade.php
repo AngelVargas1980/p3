@@ -33,6 +33,10 @@
                     <span class="fas fa-user-plus"></span>  Agregar nuevo camión
                 </a>
 
+                <a href="{{ route("predios.createp") }}" class="btn btn-primary">
+                    <span class="fas fa-user-plus"></span>  Agregar nuevo predio
+                </a>
+
             </p>
             <hr>
 
