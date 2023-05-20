@@ -17,8 +17,8 @@ class Tipo_mercanciaFactory extends Factory
     public function definition(): array
     {
         return [
-            'id'=>$this->faker->unique()->numberBetween(1,100),
-            'descripcion'=> $this->faker->text,
+            //'id'=>$this->faker->numberBetween(1,1000),
+            'descripcion'=> $this->faker->text(10),
         ];
     }
 }

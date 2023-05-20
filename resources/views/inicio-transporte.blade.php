@@ -34,6 +34,10 @@
                     <span class="fas fa-user-plus"></span>  Agregar nuevo piloto
                 </a>
 
+                <a href="{{ route("predios.createp") }}" class="btn btn-primary">
+                    <span class="fas fa-user-plus"></span>  Agregar nuevo predio
+                </a>
+
             </p>
             <hr>
 

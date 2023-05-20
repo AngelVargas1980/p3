@@ -3,6 +3,9 @@
 use app\Http\Controllers\PersonasController;
 use app\Http\Controllers\TransporteController;
 use app\Http\Controllers\CamionController;
+use app\Http\Controllers\PredioController;
+use app\Http\Controllers\MercanciaController;
+use app\Http\Controllers\TipoMercanciaController;
 
 use Illuminate\Support\Facades\Route;
 
@@ -36,8 +39,29 @@ Route::put('/updatec/{id}', [\App\Http\Controllers\CamionController::class, 'upd
 Route::get('/showc/{id}', [\App\Http\Controllers\CamionController::class, 'showc'])->name('camiones.showc');
 Route::delete('/destroyc/{id}', [\App\Http\Controllers\CamionController::class, 'destroyc'])->name('camiones.destroyc');
 
+Route::get('/indexp', [\App\Http\Controllers\PredioController::class, 'indexp'])->name('predios.indexp');
+Route::get('/createp', [\App\Http\Controllers\PredioController::class, 'createp'])->name('predios.createp');
+Route::post('/storep', [\App\Http\Controllers\PredioController::class, 'storep'])->name('predios.storep');
+Route::get('/editp/{id}', [\App\Http\Controllers\PredioController::class, 'editp'])->name('predios.editp');
+Route::put('/updatep/{id}', [\App\Http\Controllers\PredioController::class, 'updatep'])->name('predios.updatep');
+Route::get('/showp/{id}', [\App\Http\Controllers\PredioController::class, 'showp'])->name('predios.showp');
+Route::delete('/destroyp/{id}', [\App\Http\Controllers\PredioController::class, 'destroyp'])->name('predios.destroyp');
 
+Route::get('/indextm', [\App\Http\Controllers\TipoMercanciaController::class, 'indextm'])->name('tmercancias.indextm');
+Route::get('/createtm', [\App\Http\Controllers\TipoMercanciaController::class, 'createtm'])->name('tmercancias.createtm');
+Route::post('/storetm', [\App\Http\Controllers\TipoMercanciaController::class, 'storetm'])->name('tmercancias.storetm');
+Route::get('/edittm/{id}', [\App\Http\Controllers\TipoMercanciaController::class, 'edittm'])->name('tmercancias.edittm');
+Route::put('/updatetm/{id}', [\App\Http\Controllers\TipoMercanciaController::class, 'updatetm'])->name('tmercancias.updatetm');
+Route::get('/showtm/{id}', [\App\Http\Controllers\TipoMercanciaController::class, 'showtm'])->name('tmercancias.showtm');
+Route::delete('/destroytm/{id}', [\App\Http\Controllers\TipoMercanciaController::class, 'destroytm'])->name('tmercancias.destroytm');
 
+Route::get('/indexm', [\App\Http\Controllers\MercanciaController::class, 'indexm'])->name('mercancias.indexm');
+Route::get('/createm', [\App\Http\Controllers\MercanciaController::class, 'createm'])->name('mercancias.createm');
+Route::post('/storem', [\App\Http\Controllers\MercanciaController::class, 'storem'])->name('mercancias.storem');
+Route::get('/editm/{id}', [\App\Http\Controllers\MercanciaController::class, 'editm'])->name('mercancias.editm');
+Route::put('/updatem/{id}', [\App\Http\Controllers\MercanciaController::class, 'updatem'])->name('mercancias.updatem');
+Route::get('/showm/{id}', [\App\Http\Controllers\MercanciaController::class, 'showm'])->name('mercancias.showm');
+Route::delete('/destroym/{id}', [\App\Http\Controllers\MercanciaController::class, 'destroym'])->name('mercancias.destroym');
 
 
 

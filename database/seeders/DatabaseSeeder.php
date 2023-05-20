@@ -19,12 +19,13 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        Transporte::factory(100)->create();
-        Camion::factory(100)->create();
-        Personas::factory(100)->create();
-        Predio::factory(100)->create();
-        Mercancia::factory(100)->create();
-        Tipo_mercancia::factory(100)->create();
+        Transporte::factory(10)->create();
+        Camion::factory(10)->create();
+        Personas::factory(10)->create();
+        Predio::factory(10)->create();
+        Tipo_mercancia::factory(10)->create();
+        Mercancia::factory(10)->create();
+
 
 
         // \App\Models\User::factory(10)->create();
